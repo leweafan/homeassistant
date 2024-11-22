@@ -2,7 +2,7 @@ mqtt:
   sensor:
     - unique_id: air_monitor_co2
       object_id: air_monitor_co2
-      name: "Air Monitor CO2"
+      name: "CO2"
       # mac-address in topic name is case sensitive, use uppercase!
       state_topic: &air_monitor_topic "qingping/582D347056C8/up"
       device: &air_monitor_device
@@ -21,7 +21,7 @@ mqtt:
 
     - unique_id: air_monitor_temperature
       object_id: air_monitor_temperature
-      name: "Air Monitor Temperature"
+      name: "Temperature"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: temperature
@@ -34,7 +34,7 @@ mqtt:
 
     - unique_id: air_monitor_humidity
       object_id: air_monitor_humidity
-      name: "Air Monitor Humidity"
+      name: "Humidity"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: humidity
@@ -47,7 +47,7 @@ mqtt:
 
     - unique_id: air_monitor_tvoc
       object_id: air_monitor_tvoc
-      name: "Air Monitor tVOC"
+      name: "tVOC"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: volatile_organic_compounds_parts
@@ -65,7 +65,7 @@ mqtt:
 
     - unique_id: air_monitor_pm25
       object_id: air_monitor_pm25
-      name: "Air Monitor PM2.5"
+      name: "PM2.5"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: pm25
@@ -77,7 +77,7 @@ mqtt:
 
     - unique_id: air_monitor_pm10
       object_id: air_monitor_pm10
-      name: "Air Monitor PM10"
+      name: "PM10"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: pm10
@@ -89,7 +89,7 @@ mqtt:
 
     - unique_id: air_monitor_battery
       object_id: air_monitor_battery
-      name: "Air Monitor Battery"
+      name: "Battery"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: battery
@@ -106,7 +106,7 @@ mqtt:
     # this sesnor is disabled by default.
     - unique_id: air_monitor_version
       object_id: air_monitor_version
-      name: "Air Monitor Version"
+      name: "Version"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       value_template: >-
@@ -117,7 +117,7 @@ mqtt:
 
     - unique_id: air_monitor_noise
       object_id: air_monitor_noise
-      name: "Air Monitor Noise"
+      name: "Noise"
       state_topic: *air_monitor_topic
       device: *air_monitor_device
       device_class: sound_pressure
